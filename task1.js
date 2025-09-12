@@ -7,10 +7,14 @@
 
 const temp = Number(prompt("Какая температура на улице?"))
 const weather = prompt("Какие погодные условия (clear or cloudy)?")
+let activity 
 
-
-
-
-const activity = 'golf'
+if ( temp >= 25 && weather == 'clear'){
+    activity = " golf"
+} else if (temp >= 10 || weather == 'cloudy'){
+    activity = "bowling"
+} else {
+    activity = "hiking"
+}
 
 console.log(activity)
